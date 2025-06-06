@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo Otimizado - Mauro J. S. Santana para Bezerr.IA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7fafc; /* bg-gray-100 */
+            color: #2d3748; /* text-gray-800 */
+        }
+        .font-source-code {
+            font-family: 'Source Code Pro', monospace;
+        }
+        
+        /* Paleta Descontraída e Sucinta */
+        :root {
+            --primary-color: #38b2ac; /* Teal 500 */
+            --secondary-color: #ed8936; /* Orange 500 */
+            --accent-color: #4299e1; /* Blue 500 */
+            --text-color: #2d3748;
+            --heading-color: #1a202c;
+            --card-bg: #ffffff;
+            --border-light: #e2e8f0;
+        }
+
+        .text-primary { color: var(--primary-color); }
+        .text-secondary { color: var(--secondary-color); }
+        .text-accent { color: var(--accent-color); }
+        .bg-primary-light { background-color: #e6fffa; }
+        
+        .section-title {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 800;
+            font-size: 1.75rem;
+            color: var(--heading-color);
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--primary-color);
+        }
+        .card {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--secondary-color);
+        }
+        .contact-link {
+            color: var(--accent-color);
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+        .contact-link:hover {
+            color: var(--primary-color);
+            transform: translateY(-1px);
+        }
+        .experience-item:not(:last-child) {
+            border-bottom: 1px solid var(--border-light);
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+        }
+        .skill-tag {
+            background-color: #e6fffa;
+            color: var(--primary-color);
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-right: 0.5rem;
+            margin-bottom: 0.5rem;
+            display: inline-block;
+            transition: all 0.2s ease-in-out;
+            border: 1px solid var(--primary-color);
+        }
+        .skill-tag:hover {
+            background-color: var(--primary-color);
+            color: white;
+            transform: scale(1.03);
+        }
+        .icon-highlight {
+            margin-right: 0.5rem;
+            font-size: 1.1em; 
+            vertical-align: middle;
+            color: var(--primary-color);
+        }
+        .job-title-custom {
+            font-size: 1.25rem;
+            font-weight: 700;
+            color: var(--primary-color);
+        }
+        .company-custom {
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--secondary-color);
+        }
+        .date-custom {
+             font-family: 'Source Code Pro', monospace;
+             color: var(--accent-color);
+             font-size: 0.9rem;
+        }
+        .list-custom li {
+            padding-left: 0.5rem;
+            position: relative;
+        }
+        .list-custom li::before {
+            content: "▹";
+            position: absolute;
+            left: -0.75rem;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <div class="container mx-auto max-w-4xl p-5 md:p-10">
+
+        <!-- Cabeçalho -->
+        <header class="text-center mb-12 pt-8 pb-10 bg-primary-light rounded-lg shadow-sm">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
+                Mauro Jorge <span class="block md:inline">Santos de Santana</span>
+            </h1>
+            <p class="mt-3 text-lg md:text-xl text-primary font-semibold font-source-code">
+                Engenheiro da Computação (UFPE) | Desenvolvedor de Hardware & IoT
+            </p>
+            <div class="mt-6 flex flex-wrap justify-center gap-x-5 gap-y-2 text-md">
+                <a href="mailto:mauro.jorge0001@gmail.com" class="contact-link flex items-center">
+                    <i class="fas fa-envelope icon-highlight"></i>mauro.jorge0001@gmail.com
+                </a>
+                <a href="tel:+5581998375311" class="contact-link flex items-center">
+                    <i class="fas fa-phone-alt icon-highlight"></i>(81) 99837-5311
+                </a>
+                <a href="https://www.linkedin.com/in/mauro-jorge-santana-025121181" target="_blank" rel="noopener noreferrer" class="contact-link flex items-center">
+                    <i class="fab fa-linkedin icon-highlight"></i>LinkedIn Profile
+                </a>
+                <span class="text-accent flex items-center">
+                    <i class="fas fa-map-marker-alt icon-highlight"></i>Paudalho - PE
+                </span>
+            </div>
+        </header>
+
+        <!-- Objetivo para Bezerr.IA -->
+        <section class="mb-10">
+            <div class="card border-primary-color">
+                <h2 class="section-title"><i class="fas fa-bullseye icon-highlight text-secondary"></i>Objetivo: Parceria Freelance com Bezerr.IA</h2>
+                <p class="text-md leading-relaxed text-gray-700">
+                    Entusiasmado com a missão da <strong class="font-semibold text-primary">Bezerr.IA</strong> de levar tecnologia à cadeia leiteira, busco aplicar minha expertise em desenvolvimento de hardware e IoT para criar o <strong class="font-semibold text-primary">protótipo do sistema de monitoramento de temperatura</strong>. Meu objetivo é entregar uma solução funcional, durável e escalável, contribuindo ativamente para resolver um problema crítico do setor e com grande interesse na possibilidade de <strong class="font-semibold text-primary">evoluir esta parceria para uma posição de cofundador.</strong>
+                </p>
+            </div>
+        </section>
+
+        <!-- Diferenciais Chave para o Projeto -->
+        <section class="mb-10">
+            <div class="card border-secondary-color">
+                <h2 class="section-title"><i class="fas fa-star icon-highlight text-primary"></i>Qualificações para o Projeto</h2>
+                <ul class="list-custom space-y-2 text-md text-gray-700">
+                    <li><strong class="font-semibold text-primary">Expertise em ESP32:</strong> Ampla experiência no desenvolvimento de firmware e soluções completas com o microcontrolador ESP32, ideal para prototipagem rápida e conectividade Wi-Fi.</li>
+                    <li><strong class="font-semibold text-primary">Integração de Sensores e Hardware:</strong> Habilidade comprovada na escolha, teste e integração de diversos sensores (incluindo de temperatura como DS18B20) em ambientes desafiadores.</li>
+                    <li><strong class="font-semibold text-primary">Comunicação e Conectividade:</strong> Domínio de protocolos leves e eficientes como <strong class="font-semibold text-primary">MQTT e API REST</strong> para envio de dados em tempo real, além de conhecimento em redes Wi-Fi, LoRa e Bluetooth.</li>
+                    <li><strong class="font-semibold text-primary">Prototipagem e Durabilidade:</strong> Experiência prática na construção de protótipos funcionais, com foco na avaliação de encapsulamento e na durabilidade de componentes para ambientes rurais e industriais.</li>
+                    <li><strong class="font-semibold text-primary">Visão de Produto e Negócio:</strong> Capacidade de alinhar o desenvolvimento técnico às necessidades do negócio, combinando habilidades de engenharia com uma sólida vivência em gestão e operações.</li>
+                    <li><strong class="font-semibold text-primary">Liderança e Autonomia:</strong> Perfil proativo com forte senso de responsabilidade, capaz de gerenciar projetos de ponta a ponta com total autonomia, desde a concepção até a entrega.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Experiência Profissional Relevante -->
+        <section class="mb-10">
+             <div class="card border-primary-color">
+                <h2 class="section-title"><i class="fas fa-briefcase icon-highlight text-secondary"></i>Trajetória Profissional</h2>
+                <div class="space-y-6">
+                    <div class="experience-item">
+                        <h3 class="job-title-custom">Pesquisador EMBRAPII / Desenvolvedor de Hardware e IoT</h3>
+                        <p class="company-custom">Segurauto LIVE – Laboratório de Inovação Veicular (LIVE), CIn - UFPE</p>
+                        <p class="date-custom">2022 – Presente</p>
+                        <ul class="mt-2 list-custom text-gray-700 space-y-1 text-sm">
+                            <li>Liderança no desenvolvimento de protótipos de hardware para a indústria automotiva, incluindo a <strong class="font-semibold text-primary">seleção e integração de sensores de precisão</strong> (temperatura, aceleração, etc.).</li>
+                            <li>Desenvolvimento de firmware para <strong class="font-semibold text-primary">ESP32</strong> e outros microcontroladores para coleta de dados e comunicação em tempo real via <strong class="font-semibold text-primary">CAN, Wi-Fi e Bluetooth.</strong></li>
+                            <li>Criação de soluções que exigem alta durabilidade e encapsulamento para operar em condições adversas, similar ao ambiente rural.</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3 class="job-title-custom">Engenheiro de Software IoT</h3>
+                        <p class="company-custom">ioTree Innove – Recife - PE</p>
+                        <p class="date-custom">2021 – 2022</p>
+                        <ul class="mt-2 list-custom text-gray-700 space-y-1 text-sm">
+                            <li>Desenvolvimento de soluções IoT end-to-end para monitoramento, com foco na comunicação eficiente de dados via <strong class="font-semibold text-primary">MQTT e LoRa</strong> para servidores backend.</li>
+                            <li>Projeto de sistemas de baixo consumo energético, uma habilidade crucial para dispositivos alimentados por bateria em campo.</li>
+                        </ul>
+                    </div>
+                     <div class="experience-item">
+                        <h3 class="job-title-custom">Engenheiro Eletrônico & Líder de Equipe</h3>
+                        <p class="company-custom">Mangue Baja SAE – UFPE</p>
+                        <p class="date-custom">2019 – 2020</p>
+                        <ul class="mt-2 list-custom text-gray-700 space-y-1 text-sm">
+                            <li>Liderança da equipe de eletrônica, responsável pelo projeto e implementação de todo o sistema eletrônico do veículo, garantindo robustez e confiabilidade em um ambiente de alta vibração e estresse.</li>
+                            <li>Conquista de recorde histórico em eletrônica na competição nacional, um atestado da qualidade e inovação do hardware desenvolvido.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="job-title-custom">Administrador / Líder de Operações</h3>
+                        <p class="company-custom">Empresa Familiar – Paudalho - PE</p>
+                        <p class="date-custom">Desde 2010 – Presente</p>
+                        <ul class="mt-2 list-custom text-gray-700 space-y-1 text-sm">
+                            <li>Experiência prática em gestão de negócios, incluindo finanças, logística e desenvolvimento de estratégias, oferecendo uma visão holística que vai além do desenvolvimento técnico.</li>
+                            <li>Habilidade em <strong class="font-semibold text-primary">liderar equipes e projetos</strong>, garantindo entregas dentro do prazo e do orçamento.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Toolkit de Competências Reorganizado -->
+        <section class="mb-10">
+            <div class="card border-secondary-color">
+                <h2 class="section-title"><i class="fas fa-tools icon-highlight text-primary"></i>Toolkit de Competências</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-x-6 gap-y-4">
+                    <div>
+                        <h3 class="text-lg font-bold text-primary mb-2">Sistemas Embarcados & IoT:</h3>
+                        <p><span class="skill-tag">ESP32</span><span class="skill-tag">Arduino</span><span class="skill-tag">Firmware em C/C++</span><span class="skill-tag">PlatformIO</span><span class="skill-tag">Integração de Sensores</span><span class="skill-tag">Prototipagem Rápida</span></p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-primary mb-2">Redes & Protocolos:</h3>
+                        <p><span class="skill-tag">Wi-Fi</span><span class="skill-tag">MQTT</span><span class="skill-tag">API REST</span><span class="skill-tag">LoRaWAN</span><span class="skill-tag">Bluetooth/BLE</span><span class="skill-tag">CAN Bus</span><span class="skill-tag">TCP/IP</span></p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-primary mb-2">Desenvolvimento & Plataformas:</h3>
+                        <p><span class="skill-tag">Python</span><span class="skill-tag">Docker</span><span class="skill-tag">Git & GitHub</span><span class="skill-tag">Linux</span></p>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-primary mb-2">Análise & Gestão:</h3>
+                        <p><span class="skill-tag">Liderança de Pessoas</span><span class="skill-tag">Gestão de Projetos</span><span class="skill-tag">Grafana</span><span class="skill-tag">Wireshark</span><span class="skill-tag">Análise de Dados</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid md:grid-cols-2 gap-x-6">
+            <!-- Formação Acadêmica -->
+            <section class="mb-10 md:mb-0">
+                <div class="card border-accent-color h-full">
+                    <h2 class="section-title"><i class="fas fa-graduation-cap icon-highlight text-secondary"></i>Formação</h2>
+                    <div class="space-y-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-primary">Bacharelado em Engenharia da Computação</h3>
+                            <p class="text-md font-semibold text-gray-700">UFPE – Universidade Federal de Pernambuco</p>
+                            <p class="text-gray-500 font-source-code text-sm">Concluindo</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Conquistas -->
+            <section>
+                <div class="card border-primary-color h-full">
+                    <h2 class="section-title"><i class="fas fa-award icon-highlight text-secondary"></i>Conquistas</h2>
+                    <ul class="list-custom space-y-2 text-md text-gray-700">
+                        <li><strong class="font-semibold text-primary">Recorde histórico em eletrônica – Baja SAE Brasil 2020.</strong></li>
+                        <li><strong class="font-semibold text-primary">1º lugar – Baja SAE Nordeste 2022.</strong></li>
+                        <li>Reconhecimento pela inovação e robustez em projetos de hardware.</li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+
+        <footer class="text-center mt-12 pt-6 border-t border-gray-300">
+            <p class="text-sm text-gray-500 font-source-code">Mauro J. S. Santana &copy; 2025 | Pronto para construir soluções inovadoras.</p>
+        </footer>
+
+    </div>
+</body>
+</html>
